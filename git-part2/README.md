@@ -22,20 +22,20 @@ This is a guide to using Git, a version control tool used for collaborative prog
 1. Cloning = copy the git on your local machine from the cloud
 2. Open a terminal (can be in VS Code). Point it to a directory where you want the cloned repo will be. 
 
-![alt text](image.png)
+![alt text](images/image.png)
 
 3. Go to your project's GitHub repo page.
 4. Proceed to the Code button and copy the HTTPS link
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 5. On the terminal, run the command `git clone <HTTP LINK HERE>`
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 After cloning your git, you should see the files in your preferred folder. 
 
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
 # Pushing and Pulling Changes
 
@@ -43,7 +43,7 @@ After cloning your git, you should see the files in your preferred folder.
 - Before coding anything, you want to update your copy of the codes.
 - While inside the folder of your repo, run `git pull` to pull any changes uploaded by your peers.
 
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
 ## Uploading Changes into the Git
 
@@ -55,7 +55,7 @@ The following include the specific steps to updating the git from your PCs.
     - "Staging" is to group the changes to upload to the remote repo.
     - Do this by sending the command `git add .` on the terminal. The `.` means "all". You can cherry pick files/folders you want to stage but this is rarely used.
 
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
 2. COMMIT the Changes
     - Once you've grouped the changes to upload, you COMMIT them so that you can add details about the changes.
@@ -63,14 +63,14 @@ The following include the specific steps to updating the git from your PCs.
     - Here, we use the command `git commit -m '<description here>'`
     - You can also do it via VS Code
 
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
 
 3. PUSH the Commits
     - "Pushing the commits" means sync the commits from your computer (i.e. local repo) to the cloud (i.e. remote repo).
     - do this with the command `git push`
 
-![alt text](image-7.png)
+![alt text](images/image-7.png)
 
 # SUCCESS!
 
