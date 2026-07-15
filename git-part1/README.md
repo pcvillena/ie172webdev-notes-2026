@@ -4,14 +4,14 @@ This is a guide to using Git, a version control tool used for collaborative prog
 ---
 
 # Table of Contents
-- [Guide to Git: Part 1](#guide-to-git-part-1)
-- [Table of Contents](#table-of-contents)
-- [Git Setup](#git-setup)
+- **[Guide to Git: Part 1](#guide-to-git-part-1)**
+- **[Table of Contents](#table-of-contents)**
+- **[Git Setup](#git-setup)**
     - STEP 1: Install Git
     - STEP 2: Create Git via GitHub
     - STEP 3: Add members to Repository
-- [Cloning a GitHub Repository](#cloning-a-github-repository)
-- [Commits](#commits)
+- **[Cloning a GitHub Repository](#cloning-a-github-repository)**
+- **[Commits](#commits)**
 ---
 
 # Git Setup
