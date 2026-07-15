@@ -16,8 +16,8 @@ GitHub repo containing materials for studying web development under IE 172: Info
 - b. Records Edit Function
 
 ## GitHub Basics
-- [Guide to Git: Part 1](git-part1/README.md)
-- [Guide to Git: Part 2](git-part2/README.md)
+- [Guide to Git: Part 1](git/git-part1/README.md)
+- [Guide to Git: Part 2](git/git-part2/README.md)
 
 ## Additional Functions
 - Login Page
