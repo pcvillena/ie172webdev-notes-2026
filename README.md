@@ -1,12 +1,8 @@
 # ie172webdev-notes-2026
 GitHub repo containing materials for studying web development under IE 172: Information Systems II
 
-## GitHub Basics
-- [Guide to Git: Part 1](git-part1/README.md)
-- [Guide to Git: Part 2](git-part2/README.md)
-
 ## Module 1: First Dash App
-    - a. Virtual Environments
+    - [a. Virtual Environments](module1/1a/README.md)
     - b. Dash
     - c. CSS: Cascading Style Sheets
 
@@ -19,6 +15,10 @@ GitHub repo containing materials for studying web development under IE 172: Info
     - a. Records Table List
     - b. Records Edit Function
 
+## GitHub Basics
+- [Guide to Git: Part 1](git-part1/README.md)
+- [Guide to Git: Part 2](git-part2/README.md)
+
 ## Additional Functions
-- a. Login Page
+- Login Page
 
