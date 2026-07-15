@@ -113,12 +113,12 @@ Commits are 'changes' to your repository at a specific point in time. This is ba
 
     - *Note that you have only updated your local repo so far, not the remote repo.*
 
-#### How often should we be committing?
 
-- **Commit early, commit often**
-- You want to commit everytime you write a logical piece of working code (not necessarily every line of code). This way, you can reliably revert to a version of your codebase where everything is stable and working.
+> How often should we be committing?
+>- **Commit early, commit often, commit after**
+>- You want to commit everytime you write a logical piece of working code (not necessarily every line of code). This way, you can reliably revert to a version of your codebase where everything is stable and working.
 -**Small increments of commits** are key to good version control and collaborative development.
-- See what others are saying about this [here](https://stackoverflow.com/questions/107264/how-often-to-commit-changes-to-source-control).
+>- See what others are saying about this [here](https://stackoverflow.com/questions/107264/how-often-to-commit-changes-to-source-control).
 
 5. Push the changes
     - Lastly, PUSHING means to sync your commits from your local repo to the remote repo.
