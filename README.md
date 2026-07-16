@@ -22,3 +22,4 @@ GitHub repo containing materials for studying web development under IE 172: Info
 ## Additional Functions
 - Login Page
 
+Content from ie172webdev_notes by casonday
