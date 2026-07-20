@@ -1,15 +1,16 @@
 # Module 1c: CSS Notes
 <!-- vscode-markdown-toc -->
-* 1. [Preliminaries](#Preliminaries)
-* 2. [Custom Style Sheets](#CustomStyleSheets)
-* 3. [External Stylesheets](#ExternalStylesheets)
-* 4. [Using CSS Classes](#UsingCSSClasses)
-* 5. [Creating CSS Classes](#CreatingCSSClasses)
-* 6. [Layouting](#Layouting)
-	* 6.1. [Container Divs](#ContainerDivs)
-	* 6.2. [Units of Measures](#UnitsofMeasures)
-	* 6.3. [Grid](#Grid)
-	* 6.4. [Flex Boxes](#FlexBoxes)
+1. [Preliminaries](#Preliminaries)
+2. [Custom Style Sheets](#CustomStyleSheets)
+3. [External Stylesheets](#ExternalStylesheets)
+4. [Using CSS Classes](#UsingCSSClasses)
+5. [Creating CSS Classes](#CreatingCSSClasses)
+6. [Layouting](#Layouting)
+
+* 6.1. [Container Divs](#ContainerDivs)
+* 6.2. [Units of Measures](#UnitsofMeasures)
+* 6.3. [Grid](#Grid)
+* 6.4. [Flex Boxes](#FlexBoxes)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -25,6 +26,7 @@
 ##  2. <a name='CustomStyleSheets'></a>Custom Style Sheets
 
 Cascading Style Sheets (CSS) are basically used to style HTML elements. In Dash, you can simply add CSS codes via the `style` argument. Try this by modifying your app.layout definition into the following:
+
 ```python
 app.layout = html.Div(
     [
@@ -35,9 +37,9 @@ app.layout = html.Div(
     ]
 )
 ```
+
 * The `border` is known as a CSS property that you can alter to setup how an element looks like
 * The other side of the pairing is known as the `value` for the property.
-
 
 We will not be discussing all the possible CSS properties -- they are actually easily searchable on the internet according to your use cases.
 
@@ -48,9 +50,9 @@ In the `bootstrap.css` file, you can find the CSS properties for the HTML elemen
 
 ##  4. <a name='UsingCSSClasses'></a>Using CSS Classes
 
-You can definitely use the classes in `bootstrap.css` into your work. Let's use `w-100` and `text-center` so we can put `Hello World` in the middle of the div. 
+You can definitely use the classes in `bootstrap.css` into your work. Let's use `w-100` and `text-center` so we can put `Hello World` in the middle of the div.
 
-Put these two classes into the `className` argument of the div of interest. 
+Put these two classes into the `className` argument of the div of interest.
 
 ```python
         html.Div(
@@ -61,6 +63,7 @@ Put these two classes into the `className` argument of the div of interest.
 ```
 
 Here are some of my most used classes:
+
 * `p-auto`
 * `m-auto`
 * `text-center`
@@ -76,6 +79,7 @@ In programming, we do not like coding the same thing more than once. Custom CSS 
     font-size: 90%;
 }
 ```
+
 As practice, these custom classes are placed not inside `bootstrap.css` so that we can better track these add-ons. Follow these instructions to setup your `customcss.css`.
 
 1. Create `customcss.css` inside `assets`
@@ -85,13 +89,13 @@ Add 2 html.P() elements the `placeholder-text` class so your app looks like this
 
 ![alt text](readme_img/placeholdertext.png)
 
-
 ##  6. <a name='Layouting'></a>Layouting
 
 In this section, we will learn the common concerns in layouting. \
 
 ###  6.1. <a name='ContainerDivs'></a>Container Divs
-Container divs all have configurable spaces around them that we can use to layout and add whitespace between elements. 
+
+Container divs all have configurable spaces around them that we can use to layout and add whitespace between elements.
 
 ![margins](./readme_img/margins.png)
 
@@ -104,7 +108,7 @@ Let us use these margins and use a border to visualize them. Add this element to
         )
 ```
 
-Analyze the webpage using the developer tools on your browser. Press `F12`. 
+Analyze the webpage using the developer tools on your browser. Press `F12`.
 
 ![inspector](./readme_img/inspector.png)
 
@@ -113,27 +117,29 @@ You can highlight your elements and tryout some combinations of settings via the
 ###  6.2. <a name='UnitsofMeasures'></a>Units of Measures
 
 [Reference] (https://www.freecodecamp.org/news/css-unit-guide/)
+
 * Absolute
   * `px` -- computer pixels
-  *  `cm` -- around 37.8 px
-  *  `mm` -- 1/10 of a cm
-  *  `in` -- 2.54 cm
-  *  `pt` -- points, equivalent to 4/3 px
-*  Relative
-   *  `em` -- relative to the font size of a parent unit
-   *  `rem` -- root em. Based on the font size **of the entire webpage**
-   *  `%` -- percentage of the parent unit
-   *  `vw` -- 1% of the width of the viewing screen. 100vw covers entire screen width.
-   *  `vh` -- 1% of the height of the viewing screen. 100vh covers the entire screen height.
+  * `cm` -- around 37.8 px
+  * `mm` -- 1/10 of a cm
+  * `in` -- 2.54 cm
+  * `pt` -- points, equivalent to 4/3 px
+* Relative
+   * `em` -- relative to the font size of a parent unit
+   * `rem` -- root em. Based on the font size **of the entire webpage**
+   * `%` -- percentage of the parent unit
+   * `vw` -- 1% of the width of the viewing screen. 100vw covers entire screen width.
+   * `vh` -- 1% of the height of the viewing screen. 100vh covers the entire screen height.
 
 
 ###  6.3. <a name='Grid'></a>Grid
 
-Placing divs side-by-side is a common problem for beginners. One way is to adapt a grid-like treatment to the containers. 
+Placing divs side-by-side is a common problem for beginners. One way is to adapt a grid-like treatment to the containers.
 
-In a grid configuration, we have `dbc.Row()` that contain `dbc.Col`. Rows can expand to fill the entire screen, but each row can only have a maximum width of `12` units. 
+In a grid configuration, we have `dbc.Row()` that contain `dbc.Col`. Rows can expand to fill the entire screen, but each row can only have a maximum width of `12` units.
 
-Add these elements to your layout. 
+Add these elements to your layout.
+
 ```python
         dbc.Row(
             [
@@ -150,7 +156,7 @@ Add these elements to your layout.
 ```
 
 ###  6.4. <a name='FlexBoxes'></a>Flex Boxes
-Flex boxes offer another way to layout your divs side by side. 
+Flex boxes offer another way to layout your divs side by side.
 
 ```python
         html.Br(),
