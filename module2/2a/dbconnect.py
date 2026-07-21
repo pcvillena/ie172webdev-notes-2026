@@ -1,7 +1,5 @@
-
 import pandas as pd
 import psycopg2
-
 
 def getdblocation():
     db = psycopg2.connect(
@@ -13,7 +11,6 @@ def getdblocation():
     )
 
     return db
-
 
 def modifyDB(sql, values):
     db = getdblocation()

@@ -30,12 +30,12 @@ For this module, we will be creating a multi-page application. Take note of the 
 * Code Management -- how we work with scripts and where we put them
 * Callback structures and syntax
 
-###  1.1. Requirements
+### 1.1. Requirements
 
 For this module, you will need the following:
 
 * Your workspaces with venv configured
-* A new folder to store the new app -- will be referred to as `app_folder`. 
+* A new folder to store the new app -- will be referred to as `app_folder`.
 * An `assets` folder within the main folder for the app. Make sure to update your copies of `customcss.css`.
 * The directories will look like the following: Please add the files needed. **Keep them blank for now.**
 
@@ -168,7 +168,7 @@ def displaypage (pathname):
     
 ```
 
-##  5. Add scripts to run the server
+## 5. Add scripts to run the server
 
 Do not forget to add a command to run your server.
 
@@ -181,11 +181,11 @@ if __name__ == '__main__':
 
 At this point, you can test your app. Play with the URL paths to test your scripts
 
-![](./readme_img/homeurl.png)
+![alt_text](./readme_img/homeurl.png)
 
-![](./readme_img/moviesurl.png)
+![alt_text](./readme_img/moviesurl.png)
 
-![](./readme_img/youtubeurl.png)
+![alt_text](./readme_img/youtubeurl.png)
 
 ## 6. Create `commonmodules.py`
 
@@ -257,7 +257,7 @@ Let us now add the navigation bar into `index.py` so that we can see it in the l
 
 Test your app. Feel free to play with the menu items.
 
-![](./readme_img/navbar.png)
+![alt_text](./readme_img/navbar.png)
 
 ## 7. Your App's Landing Page
 

@@ -1,6 +1,5 @@
 import dbconnect as db
 
-
 def addGenres(genre_name):
     sqlcode = """
         INSERT INTO genres (
@@ -37,7 +36,6 @@ def clearGenres():
         "TRUNCATE TABLE genres RESTART IDENTITY CASCADE"
     )
     
-
 
 if __name__ == '__main__':
     # Add genres to the db
