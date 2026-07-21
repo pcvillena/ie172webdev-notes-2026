@@ -28,4 +28,4 @@ GitHub repo containing materials for studying web development under IE 172: Info
 
 - [Login Page](login/README.md)
 
-*Content from ie172webdev_notes by **casonday***
+_Content from ie172webdev_notes by **casonday**_
