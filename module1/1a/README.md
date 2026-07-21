@@ -8,8 +8,7 @@
     * 3.1. [Decide the Location](#31-decide-the-location)
     * 3.2. [CLI Basics](#32-cli-basics)
     * 3.3. [Proceed to the Venv folder using the CLI](#33-proceed-to-the-venv-folder-using-the-cli)
-    * 3.4. [Install `virtualenv`](#34-install-virtualenv)
-    * 3.5. [Create your venv](#35-create-your-venv)
+    * 3.4. [Install your virtual environment](#34-install-your-virtual-environment)
 
 4. [Activate your Venv](#4-activate-your-venv)
     * 4.1. [What makes this venv new?](#41-what-makes-this-venv-new)
@@ -63,7 +62,7 @@ Personally, I put it in a folder away from my `.py` scripts. Usually, you share 
 
 Pick a convenient location on your PC. For example, I have a fixed directory for venvs: `D:\venvs\`.
 
-![alt text](readme-img/venv_dir.png)
+![alt text](readme-img/placeholder2.png)
 
 ### 3.2. CLI Basics
 
@@ -97,39 +96,33 @@ cd "<path>"
 Replace `<path>` with the path you copied. The double-quotes may be important here.
 After pressing Enter/Return, you get the following.
 
-![alt text](readme-img/venvdir.png)
+![alt text](readme-img/vscode_setup.png)
 
-### 3.4. Install `virtualenv`
-
-The package `virtualenv` creates your Venvs for you. Installing it requires the Internet.
+### 3.4. Install your virtual environment
 
 On your Terminal, type the following:
 
-```(terminal)
-pip install virtualenv
+For Windows Terminal/Powershell:
+
+```bash
+python -m venv <environment_name>
 ```
 
-MacOS users may require `pip3` instead of `pip`.
+For MacOS:
 
-### 3.5. Create your venv
-
-Creating virtual environments has the following syntax:
-
-```(terminal)
-virtualenv <environment_name>
+```bash
+python3 -m venv <environment_name>
 ```
 
-The environment name is used for quick identification.
+Here's an example for you to follow:
 
-Let's create your new venv. Run the following scripts.
-
-```(terminal)
-virtualenv ie172_lectures
+```bash
+python -m venv ie172_lectures
 ```
 
-This might take a while. It's done when the cursor starts blinking again. You may also verify this by running the following on your terminal:
+You may  verify this by running the following on your terminal:
 
-```(terminal)
+```bash
 ls
 ```
 
@@ -141,7 +134,7 @@ Or, just checking your file explorer for a new folder named `ie172_lectures`
 
 As mentioned earlier, venvs are "clean clones" of Python. To compare, execute the following to show the installed dependencies in your system-installed Python.
 
-```(terminal)
+```terminal
 pip freeze
 ```
 
@@ -159,13 +152,13 @@ Take note of these outputs.
 
 For Windows users, want to run the `activate` file inside your venv folder. Generally, it's in the following directory:
 
-```(terminal)
+```bash
 <venvname>/Scripts/activate
 ```
 
 In case you are using Bash, activating the venv will look like this:
 
-```(bash)
+```bash
 source <venvname>/Scripts/activate
 ```
 
@@ -175,7 +168,7 @@ If you run `ls` and your venv folder is there, simply run the script above -- re
 
 Make sure that when you run `ls`, your venv folder shows up. Here's your syntax to activate your venv.
 
-```(terminal)
+```bash
 source <venvname>/bin/activate
 ```
 
@@ -193,7 +186,7 @@ All py files run via this terminal instance will now use the venv as its Python.
 
 When a venv is active, run the following to deactivate it.
 
-```(terminal)
+```bash
 deactivate
 ```
 
@@ -221,13 +214,13 @@ Pick `Enter interpreter path` > `Find`.
 
 Locate your venv folder, then select the following file: `Scripts/python`
 
-![alt text](readme-img/vscode_setup.png)
+![alt text](readme-img/image.png)
 
 ### 5.3. Verify the Interpreter
 
 For this one, open or create a py file. The active Python interpreter should be reflected at the bottom status bar.
 
-![alt text](readme-img/interpret.png)
+![alt text](readme-img/labelinput.png)
 
 ## 6. Add on: VS Code Terminal
 
