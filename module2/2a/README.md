@@ -4,21 +4,21 @@
 1. [Preliminaries](#1-preliminaries)
 2. [Database Setup](#2-database-setup)
 
-* 2.1. [Create your Database](#21-create-your-database)
-* 2.2. [Create the Tables](#22-create-the-tables)
+    * 2.1. [Create your Database](#21-create-your-database)
+    * 2.2. [Create the Tables](#22-create-the-tables)
 
-1. [App Setup](#3-app-setup)
+3. [App Setup](#3-app-setup)
 
-* 3.1. [Run the Venv](#31-run-the-venv)
-* 3.2. [Install Dependencies](#32-install-dependencies)
+    * 3.1. [Run the Venv](#31-run-the-venv)
+    * 3.2. [Install Dependencies](#32-install-dependencies)
 
-1. [Create your API](#4-create-your-api)
+4. [Create your API](#4-create-your-api)
 
-* 4.1. [Create your `dbconnect.py`](#41-create-your-dbconnectpy)
-* 4.2. [Use the API to Access the DB](#42-use-the-api-to-access-the-db)
+    * 4.1. [Create your `dbconnect.py`](#41-create-your-dbconnectpy)
+    * 4.2. [Use the API to Access the DB](#42-use-the-api-to-access-the-db)
 
-1. [SQL Injection](#5-sql-injection)
-2. [Using your API to modify your records](#6-using-your-api-to-modify-your-records)
+5. [SQL Injection](#5-sql-injection)
+6. [Using your API to modify your records](#6-using-your-api-to-modify-your-records)
 
 <!-- vscode-markdown-toc-config
 	numbering=true

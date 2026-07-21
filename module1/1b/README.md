@@ -5,19 +5,19 @@
 3. [Setup your App File](#3-setup-your-app-file)
 4. [The `app.py` Code Structure](#4-the-apppy-code-structure)
 
-* 4.1. [`import` Dependencies](#41-import-dependencies)
-* 4.2. [Define your application object](#42-define-your-application-object)
-* 4.3. [Setup your App Title and Initial Layout](#43-setup-your-app-title-and-initial-layout)
-* 4.4. [Run the Server](#44-run-the-server)
-* 4.5. [Kill the Server](#45-kill-the-server)
+    * 4.1. [`import` Dependencies](#41-import-dependencies)
+    * 4.2. [Define your application object](#42-define-your-application-object)
+    * 4.3. [Setup your App Title and Initial Layout](#43-setup-your-app-title-and-initial-layout)
+    * 4.4. [Run the Server](#44-run-the-server)
+    * 4.5. [Kill the Server](#45-kill-the-server)
 
-1. [Specify this App's Functionalities](#5-specify-this-apps-functionalities)
-2. [Set up the Layout](#6-set-up-the-layout)
+5. [Specify this App's Functionalities](#5-specify-this-apps-functionalities)
+6. [Set up the Layout](#6-set-up-the-layout)
 
-* 6.1. [Adding more elements](#61-adding-more-elements)
+    * 6.1. [Adding more elements](#61-adding-more-elements)
 
-1. [Make the Components Interactive](#7-make-the-components-interactive)
-2. [Additional work to be done -- Challenge Yourselves!](#8-additional-work-to-be-done----challenge-yourselves)
+7. [Make the Components Interactive](#7-make-the-components-interactive)
+8. [Additional work to be done -- Challenge Yourselves!](#8-additional-work-to-be-done----challenge-yourselves)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -25,7 +25,7 @@
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 
-## 1. <a name='Preliminaries'></a>Preliminaries
+## 1. Preliminaries
 
 You will need the following before we start.
 
@@ -34,7 +34,7 @@ You will need the following before we start.
   * All your codes should be inside this folder
 * Open VS Code, ensure that the venv from Module 1a is active
 
-## 2. <a name='InstallDependencies'></a>Install Dependencies
+## 2. Install Dependencies
 
 **Dependencies** are the packages that you need to make your project work.
 
@@ -48,13 +48,13 @@ pip install dash_bootstrap_components
 * `dash` -- This is the package that provides us with functions to customize our application
 * `dash_bootstrap_components` -- This is to make the application look better
 
-## 3. <a name='SetupyourAppFile'></a>Setup your App File
+## 3. Setup your App File
 
 For this exercise, we will setup a single-page website. Create a blank script, `app.py`.
 
-## 4. <a name='Theapp.pyCodeStructure'></a>The `app.py` Code Structure
+## 4. The `app.py` Code Structure
 
-### 4.1. <a name='importDependencies'></a>`import` Dependencies
+### 4.1. `import` Dependencies
 
 Start writing scripts in `app.py` by adding the packages needed for your application.
 

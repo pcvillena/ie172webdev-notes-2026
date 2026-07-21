@@ -7,10 +7,10 @@
 5. [Creating CSS Classes](#5-creating-css-classes)
 6. [Layouting](#6-layouting)
 
-* 6.1. [Container Divs](#61-container-divs)
-* 6.2. [Units of Measures](#62-units-of-measures)
-* 6.3. [Grid](#63-grid)
-* 6.4. [Flex Boxes](#64-flex-boxes)
+    * 6.1. [Container Divs](#61-container-divs)
+    * 6.2. [Units of Measures](#62-units-of-measures)
+    * 6.3. [Grid](#63-grid)
+    * 6.4. [Flex Boxes](#64-flex-boxes)
 
 <!-- vscode-markdown-toc-config
 	numbering=true

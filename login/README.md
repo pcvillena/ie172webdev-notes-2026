@@ -66,4 +66,3 @@ _Optional_: You may also want the following controls to the signup page:
 
 1. Add a link so you can logout.
 2. Incorporate the logout URL to `index.py` so it leads to the proper landing page.
- 
