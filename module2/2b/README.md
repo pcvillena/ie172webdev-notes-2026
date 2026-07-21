@@ -1,20 +1,17 @@
 # Module 2b: App Setup
 <!-- vscode-markdown-toc -->
 1. [Preliminaries](#1-preliminaries)
-
-* 1.1. [Requirements](#11-requirements)
-* 1.2. [Review](#12-review)
-
+    * 1.1. [Requirements](#11-requirements)
+    * 1.2. [Review](#12-review)
 2. [Create `app.py`](#2create-apppy)
 3. [Create `index.py`](#3-create-indexpy)
 4. [Switching `page-content` using URL](#4-switching-page-content-using-url)
 5. [Add scripts to run the server](#5-add-scripts-to-run-the-server)
 6. [Create `commonmodules.py`](#6-create-commonmodulespy)
 7. [Your App's Landing Page](#7-your-apps-landing-page)
-
-* 7.1. [Setup `home.py`](#71-setup-homepy)
-* 7.2. [Import `home` into `index`](#72-import-home-into-index)
-* 7.3. [Revise the URL Callback](#73-revise-the-url-callback)
+    * 7.1. [Setup `home.py`](#71-setup-homepy)
+    * 7.2. [Import `home` into `index`](#72-import-home-into-index)
+    * 7.3. [Revise the URL Callback](#73-revise-the-url-callback)
 
 <!-- vscode-markdown-toc-config
 	numbering=true

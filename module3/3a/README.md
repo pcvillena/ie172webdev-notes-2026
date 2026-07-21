@@ -2,22 +2,22 @@
 <!-- vscode-markdown-toc -->
 1. [Preliminaries](#1-preliminaries)
 
-* 1.1. [What to expect in Module 3?](#11-what-to-expect-in-module-3)
-* 1.2. [Requirements before we proceed](#12-requirements-before-we-proceed)
+    * 1.1. [What to expect in Module 3?](#11-what-to-expect-in-module-3)
+    * 1.2. [Requirements before we proceed](#12-requirements-before-we-proceed)
 
 2. [Generate a list of Records at the Movie Management page](#2-generate-a-list-of-records-at-the-movie-management-page)
 
-* 2.1. [Add the Callback for the Data Table](#21-add-the-callback-for-the-data-table)
-* 2.2. [Add the SQL for the table](#22-add-the-sql-for-the-table)
-* 2.3. [Make the Filter Work](#23-make-the-filter-work)
+    * 2.1. [Add the Callback for the Data Table](#21-add-the-callback-for-the-data-table)
+    * 2.2. [Add the SQL for the table](#22-add-the-sql-for-the-table)
+    * 2.3. [Make the Filter Work](#23-make-the-filter-work)
 
-	* 2.3.1. [Add the additional trigger into the callback](#231-add-the-additional-trigger-into-the-callback)
-	* 2.3.2. [Add an additional condition to the SQL WHERE clause](#232-add-an-additional-condition-to-the-sql-where-clause)
+        * 2.3.1. [Add the additional trigger into the callback](#231-add-the-additional-trigger-into-the-callback)
+        * 2.3.2. [Add an additional condition to the SQL WHERE clause](#232-add-an-additional-condition-to-the-sql-where-clause)
 
 3. [Establishing the Add and Edit Mode](#3-establishing-the-add-and-edit-mode)
 
-* 3.1. [Parts of a URL](#31-parts-of-a-url)
-* 3.2. [Selecting Movie Records to Edit](#32-selecting-movie-records-to-edit)
+    * 3.1. [Parts of a URL](#31-parts-of-a-url)
+    * 3.2. [Selecting Movie Records to Edit](#32-selecting-movie-records-to-edit)
 
 <!-- vscode-markdown-toc-config
 	numbering=true

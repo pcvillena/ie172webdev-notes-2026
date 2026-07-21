@@ -3,9 +3,9 @@
 1. [Preliminaries](#1-preliminaries)
 2. [Mockups and Design](#2-mockups-and-design)
 
-* 2.1. [Workflow](#21-workflow)
-* 2.2. [Movie Management Page](#22-movie-management-page)
-* 2.3. [Movie Form](#23-movie-form)
+    * 2.1. [Workflow](#21-workflow)
+    * 2.2. [Movie Management Page](#22-movie-management-page)
+    * 2.3. [Movie Form](#23-movie-form)
 
 3. [Creating a New Module](#3-creating-a-new-module)
 4. [Callbacks for `movie_management_profile`](#4-callbacks-for-movie_management_profile)
