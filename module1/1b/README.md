@@ -1,23 +1,23 @@
 # Module 1b: Building your First Dash App
 <!-- vscode-markdown-toc -->
-1. [Preliminaries](#Preliminaries)
-2. [Install Dependencies](#InstallDependencies)
-3. [Setup your App File](#SetupyourAppFile)
-4. [The `app.py` Code Structure](#Theapp.pyCodeStructure)
+1. [Preliminaries](#1-preliminaries)
+2. [Install Dependencies](#2-install-dependencies)
+3. [Setup your App File](#3-setup-your-app-file)
+4. [The `app.py` Code Structure](#4-the-apppy-code-structure)
 
-* 4.1. [`import` Dependencies](#importDependencies)
-* 4.2. [Define your application object](#Defineyourapplicationobject)
-* 4.3. [Setup your App Title and Initial Layout](#SetupyourAppTitleandInitialLayout)
-* 4.4. [Run the Server](#RuntheServer)
-* 4.5. [Kill the Server](#KilltheServer)
+* 4.1. [`import` Dependencies](#41-import-dependencies)
+* 4.2. [Define your application object](#42-define-your-application-object)
+* 4.3. [Setup your App Title and Initial Layout](#43-setup-your-app-title-and-initial-layout)
+* 4.4. [Run the Server](#44-run-the-server)
+* 4.5. [Kill the Server](#45-kill-the-server)
 
-5. [Specify this App's Functionalities](#SpecifythisAppsFunctionalities)
-6. [Set up the Layout](#SetuptheLayout)
+1. [Specify this App's Functionalities](#5-specify-this-apps-functionalities)
+2. [Set up the Layout](#6-set-up-the-layout)
 
-* 6.1. [Adding more elements](#Addingmoreelements)
+* 6.1. [Adding more elements](#61-adding-more-elements)
 
-7. [Make the Components Interactive](#MaketheComponentsInteractive)
-8. [Additional work to be done -- Challenge Yourselves!](#Additionalworktobedone--ChallengeYourselves)
+1. [Make the Components Interactive](#7-make-the-components-interactive)
+2. [Additional work to be done -- Challenge Yourselves!](#8-additional-work-to-be-done----challenge-yourselves)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -25,7 +25,8 @@
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 
-##  1. <a name='Preliminaries'></a>Preliminaries
+## 1. <a name='Preliminaries'></a>Preliminaries
+
 You will need the following before we start.
 
 * Internet connectivity
@@ -33,7 +34,8 @@ You will need the following before we start.
   * All your codes should be inside this folder
 * Open VS Code, ensure that the venv from Module 1a is active
 
-##  2. <a name='InstallDependencies'></a>Install Dependencies
+## 2. <a name='InstallDependencies'></a>Install Dependencies
+
 **Dependencies** are the packages that you need to make your project work.
 
 Open the terminal in VS Code through the menu, `Terminal > New Terminal`. With your venv active, execute each line of code below -- one-at-a-time.
@@ -46,12 +48,14 @@ pip install dash_bootstrap_components
 * `dash` -- This is the package that provides us with functions to customize our application
 * `dash_bootstrap_components` -- This is to make the application look better
 
-##  3. <a name='SetupyourAppFile'></a>Setup your App File
+## 3. <a name='SetupyourAppFile'></a>Setup your App File
+
 For this exercise, we will setup a single-page website. Create a blank script, `app.py`.
 
-##  4. <a name='Theapp.pyCodeStructure'></a>The `app.py` Code Structure 
+## 4. <a name='Theapp.pyCodeStructure'></a>The `app.py` Code Structure
 
-###  4.1. <a name='importDependencies'></a>`import` Dependencies
+### 4.1. <a name='importDependencies'></a>`import` Dependencies
+
 Start writing scripts in `app.py` by adding the packages needed for your application.
 
 ```python
@@ -68,8 +72,7 @@ I know dash and dash_bootstrap_components. What are the others?
 * `dcc` -- This contains functions used to define interactive elements in code
 * `html` -- This provides a way for us to add html elements to our app
 
-
-###  4.2. <a name='Defineyourapplicationobject'></a>Define your application object
+### 4.2. Define your application object
 
 The application object, `app`, is defined by the following command:
 
@@ -77,7 +80,7 @@ The application object, `app`, is defined by the following command:
 app = dash.Dash(__name__, external_stylesheets = [dbc.themes.BOOTSTRAP])
 ```
 
-###  4.3. <a name='SetupyourAppTitleandInitialLayout'></a>Setup your App Title and Initial Layout
+### 4.3. Setup your App Title and Initial Layout
 
 After defining your `app` as an application, we setup the title and the initial layout.
 
@@ -91,7 +94,7 @@ app.layout = html.Div(
 
 The app title will showup on your browser's tab. In HTML, a Div is your basic container of elements (think, "division").
 
-###  4.4. <a name='RuntheServer'></a>Run the Server
+### 4.4. Run the Server
 
 Write the scripts that will run the app.
 
@@ -107,13 +110,13 @@ Your app should now look like this:
 
 ![appinitial](./readme_img/helloworld.png)
 
-###  4.5. <a name='KilltheServer'></a>Kill the Server
+### 4.5. Kill the Server
 
 To restart the server, it has to be stopped first.
 
 While the app is running, focus on the terminal and do `Ctrl+C` or `Cmd+C` to kill the server.
 
-##  5. <a name='SpecifythisAppsFunctionalities'></a>Specify this App's Functionalities
+## 5. Specify this App's Functionalities
 
 Let's make the app actually do something. Setup a new py file `utilities.py` to contain the scripts below:
 
@@ -127,15 +130,15 @@ def getFactorial(num):
         return num*getFactorial(num-1) 
 
 def generateFibonacci(num_elements):
-	if num_elements <= 0:
-		raise Exception("Fibonacci elements must be at least 1")
-	elif num_elements == 1:
-		return [0]
-	elif num_elements == 2:
-		return [0, 1]
-	else:
-		reference_fib = generateFibonacci(num_elements-1)
-		return reference_fib + [reference_fib[-1] + reference_fib[-2]] 
+    if num_elements <= 0:
+        raise Exception("Fibonacci elements must be at least 1")
+    elif num_elements == 1:
+        return [0]
+    elif num_elements == 2:
+        return [0, 1]
+    else:
+        reference_fib = generateFibonacci(num_elements-1)
+        return reference_fib + [reference_fib[-1] + reference_fib[-2]] 
 ```
 
 The app shall have the following features:
@@ -149,7 +152,7 @@ Interface Mockup
 
 ![mockup](./readme_img/mockup.jpg)
 
-##  6. <a name='SetuptheLayout'></a>Set up the Layout
+## 6. Set up the Layout
 
 To modify the layout of the application, we have to modify the definition to the `app.layout` variable.
 
@@ -190,8 +193,8 @@ Things to take note:
 2. Particularly, `html.Div()` and `dbc.Card` are both container elements.
 3. The contents of an element are referred to as `children`.
 4. An element may contain other elements.
-   - **Strings** can be the children of many elements
-   - Other data types cannot be the children of these elements.
+   * **Strings** can be the children of many elements
+   * Other data types cannot be the children of these elements.
 5. If a container has multiple children, enclose them in square brackets `[]`,
 
 At this point, you can run your `app.py` again to check the contents.
@@ -227,7 +230,7 @@ app.layout = html.Div(
 )
 ```
 
-###  6.1. <a name='Addingmoreelements'></a>Adding more elements
+### 6.1. Adding more elements
 
 To add the other elements, we go through the `dbc` [reference page](https://dash-bootstrap-components.opensource.faculty.ai/docs/components/) (click link).
 
@@ -309,7 +312,7 @@ Here's the resulting script.
 Things to note:
 
 1. The button and the div are both interactive. We expect a response from these elements.
-2. The div has no children, but it must have an `id` since it is interactive. 
+2. The div has no children, but it must have an `id` since it is interactive.
 3. We specify the argument `n_clicks = 0` for the button to initialize its clicked state.
 
 Here's our layout now.
@@ -318,7 +321,7 @@ Here's our layout now.
 
 It does not look very nice, but that's okay. Making things pretty is for another time.
 
-##  7. <a name='MaketheComponentsInteractive'></a>Make the Components Interactive
+## 7. Make the Components Interactive
 
 You can click on stuff now but they do not work yet. To make them interactive, we need to define an [app callback](https://dash.plotly.com/basic-callbacks).
 
@@ -350,16 +353,16 @@ Here is the resulting callback. Put it **after** defining the `app.layout` but b
 
 ```python
 @callback(
-	[
-		Output('output_area', 'children')
-	],
-	[
-		Input('btn_calculate', 'n_clicks')
-	], 
-	[
-		State('num_input', 'value'), 
-		State('process_select', 'value')
-	]
+    [
+        Output('output_area', 'children')
+    ],
+    [
+        Input('btn_calculate', 'n_clicks')
+    ], 
+    [
+        State('num_input', 'value'), 
+        State('process_select', 'value')
+    ]
 )
 ```
 
@@ -367,20 +370,20 @@ Right below the callback, define the function that will execute whatever the pro
 
 ```python
 @callback(
-	[
-		Output('output_area', 'children')
-	],
-	[
-		Input('btn_calculate', 'n_clicks')
-	], 
-	[
-		State('num_input', 'value'), 
-		State('process_select', 'value')
-	]
+    [
+        Output('output_area', 'children')
+    ],
+    [
+        Input('btn_calculate', 'n_clicks')
+    ], 
+    [
+        State('num_input', 'value'), 
+        State('process_select', 'value')
+    ]
 )
 def calculateResults(btncalculate_clicks, num_input, process_select):
-	# do something
-	return [output values]
+    # do something
+    return [output values]
 ```
 
 The way we assign values to the arguments of the function `calculateResults()` is positional.
@@ -395,16 +398,16 @@ Let's complete the function. Import utilites first.
 from utilities import generateFibonacci, getFactorial
 
 @app.callback(
-	[
-		Output('output_area', 'children')
-	],
-	[
-		Input('btn_calculate', 'n_clicks')
-	], 
-	[
-		State('num_input', 'value'), 
-		State('process_select', 'value')
-	]
+    [
+        Output('output_area', 'children')
+    ],
+    [
+        Input('btn_calculate', 'n_clicks')
+    ], 
+    [
+        State('num_input', 'value'), 
+        State('process_select', 'value')
+    ]
 )
 def calculateResults(btncalculate_clicks, num_input, process_select):
     if btncalculate_clicks > 0:
@@ -435,7 +438,7 @@ Things to note:
 * All children of divs should be strings. Hence, note that we processed the function values further so they could become strings.
 * The `return` is always enclosed in square brackets.
 
-##  8. <a name='Additionalworktobedone--ChallengeYourselves'></a>Additional work to be done -- Challenge Yourselves!
+## 8. Additional work to be done -- Challenge Yourselves
 
 1. Currently, the program assumes that all inputs are valid. In case the inputs are invalid, let the application tell the user of their error via the output area.
 2. Format the output strings.

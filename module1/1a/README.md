@@ -99,7 +99,7 @@ After pressing Enter/Return, you get the following.
 
 ![alt text](readme-img/venvdir.png)
 
-###  3.4. <a name='Installvirtualenv'></a>Install `virtualenv`
+### 3.4. Install `virtualenv`
 
 The package `virtualenv` creates your Venvs for you. Installing it requires the Internet.
 
@@ -111,7 +111,7 @@ pip install virtualenv
 
 MacOS users may require `pip3` instead of `pip`.
 
-###  3.5. <a name='Createyourvenv'></a>Create your venv
+### 3.5. Create your venv
 
 Creating virtual environments has the following syntax:
 
@@ -135,9 +135,9 @@ ls
 
 Or, just checking your file explorer for a new folder named `ie172_lectures`
 
-##  4. <a name='ActivateyourVenv'></a>Activate your Venv
+## 4. Activate your Venv
 
-###  4.1. <a name='Whatmakesthisvenvnew'></a>What makes this venv new?
+### 4.1. What makes this venv new?
 
 As mentioned earlier, venvs are "clean clones" of Python. To compare, execute the following to show the installed dependencies in your system-installed Python.
 
@@ -153,9 +153,9 @@ For my case, here are the dependencies.
 
 Take note of these outputs.
 
-###  4.2. <a name='ActivatetheVenv'></a>Activate the Venv
+### 4.2. Activate the Venv
 
-####  4.2.1. <a name='Windows'></a>Windows
+#### 4.2.1. Windows
 
 For Windows users, want to run the `activate` file inside your venv folder. Generally, it's in the following directory:
 
@@ -171,7 +171,7 @@ source <venvname>/Scripts/activate
 
 If you run `ls` and your venv folder is there, simply run the script above -- remember to replace the appropriate venvname.
 
-####  4.2.2. <a name='Mac'></a>Mac
+#### 4.2.2. Mac
 
 Make sure that when you run `ls`, your venv folder shows up. Here's your syntax to activate your venv.
 
@@ -189,7 +189,7 @@ With your venv active, run `pip freeze`. What's the difference?
 
 All py files run via this terminal instance will now use the venv as its Python.
 
-###  4.3. <a name='DeactivatingaVenv'></a>Deactivating a Venv
+### 4.3. Deactivating a Venv
 
 When a venv is active, run the following to deactivate it.
 
@@ -199,17 +199,18 @@ deactivate
 
 Any py files run from now on will use the system-installed Python.
 
-##  5. <a name='SettinguponVSCode'></a>Setting up on VS Code
+## 5. Setting up on VS Code
 
 When you activate a venv, it's only active *for that window*. VS Code assists us so that whenever we open a project or workspace, it retains the activation of a venv.
 
-###  5.1. <a name='OpenyourVSCodeWorkspace'></a>Open your VS Code Workspace
+### 5.1. Open your VS Code Workspace
 
 If you don't have a workspace yet, open VS Code and your folders. Proceed to `File > Save Workspace As...` then click Save.
 
 *Why do we like workspaces?* These workspaces come in handy when we have projects with specific setups. When it comes to venvs, different projects have different venvs. Workspaces save us time by remembering the venvs for each workspace.
 
-###  5.2. <a name='SelectaPythonInterpreter'></a>Select a Python Interpreter
+### 5.2. Select a Python Interpreter
+
 A **Python Interpreter** is a Python *instance* that is used to execute Python programs. We now know that a PC can have many Python instances.
 
 In VS Code, you may start by opening the Command Palette by `Ctrl-Shift-P` or `Cmd-Shift-P`. Type in `Interpreter`. Select `Python: Select Interpreter`.
@@ -222,25 +223,25 @@ Locate your venv folder, then select the following file: `Scripts/python`
 
 ![alt text](readme-img/vscode_setup.png)
 
-###  5.3. <a name='VerifytheInterpreter'></a>Verify the Interpreter
+### 5.3. Verify the Interpreter
 
 For this one, open or create a py file. The active Python interpreter should be reflected at the bottom status bar.
 
 ![alt text](readme-img/interpret.png)
 
-##  6. <a name='Addon:VSCodeTerminal'></a>Add on: VS Code Terminal
+## 6. Add on: VS Code Terminal
 
 VS Code also has a terminal -- same terminal as the one you used before but inside VS Code. When working on projects, this can be convenient to use because of the following:
 
 * venv is automatically active (if your workspace has a venv)
 * It automatically points to your project directory
 
-[^1] https://www.geeksforgeeks.org/python-virtual-environment/
+[^1] <https://www.geeksforgeeks.org/python-virtual-environment/>
 [^notes] All these scripts were tailor-fit to the needs of the course.
 
-##  7. <a name='METHOD2:ViaVSCODE'></a>METHOD 2: Via VS CODE
+## 7. METHOD 2: Via VS CODE
 
-###  7.1. <a name='Activateyourworkspace'></a>Activate your workspace
+### 7.1. Activate your workspace
 
 1. Check the window name if there is an open workspace -- you can see `Workspace` on it.
    1. If there is an open workspace, go to `File > Close Workspace`.
@@ -250,7 +251,7 @@ VS Code also has a terminal -- same terminal as the one you used before but insi
 3. If you have a workspace...
    1. Open your workspace via `File > Open Workspace from File...` Search for your `.code-workspace` file in your folders
 
-###  7.2. <a name='Createyourvenv-1'></a>Create your venv
+### 7.2. Create your venv
 
 1. Open VS Code.
 2. Press `Ctrl + Shift + P` or `Cmd + Shift + P`.
@@ -261,7 +262,7 @@ VS Code also has a terminal -- same terminal as the one you used before but insi
 7. Select the Python version that you want. Pick the latest version.
 8. Wait fo venv to install.
 
-###  7.3. <a name='Checkifyouhavethecorrectinstallation'></a>Check if you have the correct installation
+### 7.3. Check if you have the correct installation
 
 1. Open a terminal in VS Code. `Terminal > New Terminal...`
 2. Execute `pip freeze` in your terminals.

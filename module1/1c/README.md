@@ -1,16 +1,16 @@
 # Module 1c: CSS Notes
 <!-- vscode-markdown-toc -->
-1. [Preliminaries](#Preliminaries)
-2. [Custom Style Sheets](#CustomStyleSheets)
-3. [External Stylesheets](#ExternalStylesheets)
-4. [Using CSS Classes](#UsingCSSClasses)
-5. [Creating CSS Classes](#CreatingCSSClasses)
-6. [Layouting](#Layouting)
+1. [Preliminaries](#1-preliminaries)
+2. [Custom Style Sheets](#2-custom-style-sheets)
+3. [External Stylesheets](#3-external-stylesheets)
+4. [Using CSS Classes](#4-using-css-classes)
+5. [Creating CSS Classes](#5-creating-css-classes)
+6. [Layouting](#6-layouting)
 
-* 6.1. [Container Divs](#ContainerDivs)
-* 6.2. [Units of Measures](#UnitsofMeasures)
-* 6.3. [Grid](#Grid)
-* 6.4. [Flex Boxes](#FlexBoxes)
+* 6.1. [Container Divs](#61-container-divs)
+* 6.2. [Units of Measures](#62-units-of-measures)
+* 6.3. [Grid](#63-grid)
+* 6.4. [Flex Boxes](#64-flex-boxes)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -18,12 +18,12 @@
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 
-## 1. <a name='Preliminaries'></a>Preliminaries
+## 1. Preliminaries
 
 1. Internet connection
 2. Download and copy the assets folder inside `MyFirstApp`
 
-## 2. <a name='CustomStyleSheets'></a>Custom Style Sheets
+## 2. Custom Style Sheets
 
 Cascading Style Sheets (CSS) are basically used to style HTML elements. In Dash, you can simply add CSS codes via the `style` argument. Try this by modifying your app.layout definition into the following:
 
@@ -43,13 +43,13 @@ app.layout = html.Div(
 
 We will not be discussing all the possible CSS properties -- they are actually easily searchable on the internet according to your use cases.
 
-## 3. <a name='ExternalStylesheets'></a>External Stylesheets
+## 3. External Stylesheets
 
 In the previous version of your application, you used a stylesheet that came with your import of `dbc`. To customize it, we setup the `assets` folder which contains `bootstrap.css` that you can modify to your liking.
 
 In the `bootstrap.css` file, you can find the CSS properties for the HTML elements. when you scroll down, you can also find that some names are prefixed with a `.` -- these are called classes.
 
-## 4. <a name='UsingCSSClasses'></a>Using CSS Classes
+## 4. Using CSS Classes
 
 You can definitely use the classes in `bootstrap.css` into your work. Let's use `w-100` and `text-center` so we can put `Hello World` in the middle of the div.
 
@@ -70,7 +70,7 @@ Here are some of my most used classes:
 * `text-center`
 * `fw-bold`
 
-## 5. <a name='CreatingCSSClasses'></a>Creating CSS Classes
+## 5. Creating CSS Classes
 
 In programming, we do not like coding the same thing more than once. Custom CSS classes can be created for elements in your page that are repetitive. Something that I like to keep in my projects is:
 
@@ -91,11 +91,11 @@ Add 2 html.P() elements the `placeholder-text` class so your app looks like this
 
 ![alt text](readme_img/placeholdertext.png)
 
-## 6. <a name='Layouting'></a>Layouting
+## 6. Layouting
 
 In this section, we will learn the common concerns in layouting. \
 
-### 6.1. <a name='ContainerDivs'></a>Container Divs
+### 6.1. Container Divs
 
 Container divs all have configurable spaces around them that we can use to layout and add whitespace between elements.
 
@@ -116,7 +116,7 @@ Analyze the webpage using the developer tools on your browser. Press `F12`.
 
 You can highlight your elements and tryout some combinations of settings via the developer tools. You could also learn to read HTML here as well.
 
-### 6.2. <a name='UnitsofMeasures'></a>Units of Measures
+### 6.2. Units of Measures
 
 [Reference] (<https://www.freecodecamp.org/news/css-unit-guide/>)
 
@@ -133,7 +133,7 @@ You can highlight your elements and tryout some combinations of settings via the
   * `vw` -- 1% of the width of the viewing screen. 100vw covers entire screen width.
   * `vh` -- 1% of the height of the viewing screen. 100vh covers the entire screen height.
 
-### 6.3. <a name='Grid'></a>Grid
+### 6.3. Grid
 
 Placing divs side-by-side is a common problem for beginners. One way is to adapt a grid-like treatment to the containers.
 
@@ -156,7 +156,7 @@ Add these elements to your layout.
         )
 ```
 
-### 6.4. <a name='FlexBoxes'></a>Flex Boxes
+### 6.4. Flex Boxes
 
 Flex boxes offer another way to layout your divs side by side.
 
