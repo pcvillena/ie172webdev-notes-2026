@@ -2,10 +2,11 @@
 
 GitHub repo containing materials for studying web development under IE 172: Information Systems II
 
-## GitHub Basics
+## Git Basics
 
 - [Guide to Git: Part 1](git/git-part1/README.md)
 - [Guide to Git: Part 2](git/git-part2/README.md)
+- [Guide to Git: Part 3]
 
 ## Module 1: First Dash App
 
