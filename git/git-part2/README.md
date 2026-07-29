@@ -16,7 +16,7 @@ This is a guide to using Git, a version control tool used for collaborative prog
 
 1. Create your account on GitHub.com.
 2. Your Git should by accessible to you. Consult your groupmate who setup the Git repository via GitHub.
-3. Install git on your PC/Mac. Find the appropriate installer [righthere](https://git-scm.com/downloads).
+3. Install git on your PC/Mac. Find the appropriate installer [right here](https://git-scm.com/downloads).
 
 ## Cloning an existing Repository
 
