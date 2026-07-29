@@ -34,7 +34,7 @@ What you will do will depend on whether you have pushed the erroneous code or no
 
 - Use `git revert <commit-hash>` to create a commit that is the exact opposite of a specific commit.
   - A commit hash is a unique identifier composed of numbers and lowercase letters that can be found in either GitHub or VSCode.
-  - You also have the option to simply create a normal `git commit` to undo any errors in the code.
+  - You also have the option to simply create a normal `git commit -m <summary>` to undo any errors in the code.
   
   **In GitHub:**
   Click the list of commits (the one that says <#> commits)
@@ -51,6 +51,10 @@ What you will do will depend on whether you have pushed the erroneous code or no
 
 - Run `git reset --soft HEAD~1`
   - This command removes all unpushed commits locally, but keeps all your edited code safe in your workspace.
+  ![alt text](image-3.png)
+
+  - To clear all edited code, replace `--soft` with `--hard` to undo any changes to the workspace.
+    - Doing this rolls your code back to the last working commit.
 
 ## Developing new features using branches
 
