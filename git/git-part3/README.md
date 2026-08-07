@@ -72,13 +72,106 @@ What you will do will depend on whether you have pushed the erroneous code or no
 
 ## Developing new features using branches
 
+When working on a project, you want to keep your `main` branch stable and functional. If you are adding a new feature or fixing a bug, doing it directly on `main` is risky. This is where branching comes in.
+
 ### Branches
+
+A branch represents an independent line of development. Think of it as a parallel universe where you can experiment, make mistakes, and build features without affecting the main codebase.
+
+```text
+        (feature/login-page)
+       o---o---o
+      /
+ o---o---o (main)
+```
+
+**Essential Branching Commands:**
+
+- **List all branches:**
+    `git branch` (The branch with an asterisk `*` is your current active branch).
+- **Create a new branch:**
+    `git branch <branch-name>` (e.g., `git branch feature/login-page`).
+- **Switch to a branch:**
+    `git switch <branch-name>` or `git checkout <branch-name>`.
+- **Create and switch in one command (Recommended):**
+    `git switch -c <branch-name>` or `git checkout -b <branch-name>`.
+
+Once you are on your new branch, you can `git add` and `git commit` as usual. These commits will only exist on this specific branch.
+
+---
 
 ### git merge and rebase
 
+Once your new feature is complete, you need to integrate your branch back into the `main` branch. Git provides two main ways to do this: **Merging** and **Rebasing**.
+
+**1. Git Merge**
+Merging takes the contents of a source branch and integrates them into a target branch.
+
+```text
+        (feature-branch)
+       o---o---o
+      /         \
+ o---o---o-------o (main)
+                 ^ (Merge Commit)
+```
+
+- **How to do it:** First, switch to the target branch (`git switch main`), then run `git merge <feature-branch>`.
+- **What it does:** It creates a new "merge commit" that ties the histories of both branches together.
+- **Pros:** It is safe and preserves the exact chronological history of your project.
+
+**2. Git Rebase**
+Rebasing is an alternative to merging that creates a cleaner, perfectly linear project history.
+
+```
+[Before Rebase]
+          A---B---C (feature-branch)
+         /
+    D---E---F---G (main)
+
+[After git rebase main]
+                  A'---B'---C' (feature-branch)
+                 /
+    D---E---F---G (main)
+```
+
+- **How to do it:** While on your feature branch, run `git rebase main`.
+- **What it does:** It temporarily sets aside your feature branch commits, updates your branch with the latest changes from `main`, and then re-applies your feature commits on top of it.
+- **Pros:** It eliminates unnecessary merge commits, making the project history much easier to read.
+- > **DANGER:** **Never rebase a shared branch.** Because rebasing rewrites commit history, doing it on a branch that other developers are actively using will cause massive merge conflicts for your team. Only rebase your local, private branches.
+
+---
+
 ### GitHub Pull Requests
 
+In a collaborative environment, you rarely merge your own code directly into `main` locally. Instead, you use a **Pull Request (PR)** on GitHub.
+
+A Pull Request is a feature of GitHub (and other remote hosts) that tells your team about changes you've pushed to a branch. It allows your peers to review your code, discuss modifications, and approve it before it officially becomes part of the main codebase.
+
+**The Pull Request Workflow:**
+
+1. **Push your branch to GitHub:**
+    `git push -u origin <branch-name>`
+2. **Open GitHub:** Navigate to your repository in the browser. You will usually see a green **"Compare & pull request"** button appear automatically.
+3. **Create the PR:** Click the button, give your PR a descriptive title, and outline what changes you made in the description box.
+4. **Review and Approve:** Tag your teammates as reviewers. They can leave comments or request changes directly on specific lines of code.
+5. **Merge:** Once approved, click the **"Merge pull request"** button on GitHub. Your code is now successfully integrated into `main`!
+
+---
+
 ## Other Git Tools
+
+As you become more comfortable with Git, these advanced commands will become lifesavers in your daily workflow:
+
+- **`git stash`**
+    If you are in the middle of working on a file but need to switch branches quickly to fix a bug, you can't switch if you have uncommitted changes. Run `git stash` to temporarily shelf your uncommitted changes. Once you are done fixing the bug, come back to your branch and run `git stash pop` to bring your half-finished work back.
+
+- **`git cherry-pick <commit-hash>`**
+    Imagine you made a great commit on the wrong branch. Instead of rewriting it, you can switch to the correct branch and use `cherry-pick` to grab that specific commit by its hash and apply it exactly where you need it.
+
+- **`git log --graph --oneline`**
+    This provides a beautiful, color-coded visual representation of your branch history and merges right inside your terminal.
+
+---
 
 ## SUCCESS
 

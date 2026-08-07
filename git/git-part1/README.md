@@ -92,7 +92,7 @@ Commits are 'changes' to your repository at a specific point in time. This is ba
 
 2. The .gitignore file
     - The .gitignore text file tells Git not to sync specific files into the remote repository.
-        - Venvs, databases, and .env files are usually included in the ignore list.
+        - Venvs, database backups, and .env files are usually included in the ignore list.
     - If there isnt one, create a file named ".gitignore".
     - Write the files that you dont want syncing with remote.
 
@@ -106,10 +106,6 @@ Commits are 'changes' to your repository at a specific point in time. This is ba
 
     - You can also do this in VS Code or in the VS Code terminal.
 
-    VS Code (Source Control) Commit Button:
-
-    ![alt text](images/image-10.png)
-
     VS Code (Terminal):
 
     ![alt text](images/image-11.png)
@@ -121,10 +117,14 @@ Commits are 'changes' to your repository at a specific point in time. This is ba
 
     ![alt text](images/image-12.png)
 
+    VS Code (Source Control) Commit Button:
+
+    ![alt text](images/image-10.png)
+
     - *Note that you have only updated your local repo so far, not the remote repo.*
 
     > How often should we be committing?
-    > **Commit early, commit often, commit after**
+    > **Commit early, commit often, commit after.**
     > You want to commit everytime you write a logical piece of working code (not necessarily every line of code). This way, you can reliably revert to a version of your codebase where everything is stable and working.
     -**Small increments of commits** are key to good version control and collaborative development.
     > See what others are saying about this [right here](https://stackoverflow.com/questions/107264/how-often-to-commit-changes-to-source-control).

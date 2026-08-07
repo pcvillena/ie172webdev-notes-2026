@@ -2,12 +2,6 @@
 
 GitHub repo containing materials for studying web development under IE 172: Information Systems II
 
-## Git Basics
-
-- [Guide to Git: Part 1](git/git-part1/README.md)
-- [Guide to Git: Part 2](git/git-part2/README.md)
-- [Guide to Git: Part 3]
-
 ## Module 1: First Dash App
 
 - [a. Virtual Environments](module1/1a/README.md)
@@ -24,6 +18,12 @@ GitHub repo containing materials for studying web development under IE 172: Info
 
 - [a. Records Table List](module3/3a/README.md)
 - [b. Records Edit Function](module3/3b/README.md)
+
+## Git Basics
+
+- [Guide to Git: Part 1](git/git-part1/README.md)
+- [Guide to Git: Part 2](git/git-part2/README.md)
+- [Guide to Git: Part 3](git/git-part3/README.md)
 
 ## Additional Functions
 
