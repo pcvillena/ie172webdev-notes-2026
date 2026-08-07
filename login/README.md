@@ -21,7 +21,7 @@
 
 ## Create the login page
 
-- See `IE271caseapp/apps/login.py` for the layout
+- See `IE172caseapp/apps/login.py` for the layout
 
   - Use `type='password'` for `dbc.Input` to hide texts in passwords
 
