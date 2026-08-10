@@ -122,7 +122,7 @@ Merging takes the contents of a source branch and integrates them into a target 
 **2. Git Rebase**
 Rebasing is an alternative to merging that creates a cleaner, perfectly linear project history.
 
-```
+```text
 [Before Rebase]
           A---B---C (feature-branch)
          /
@@ -160,7 +160,7 @@ A Pull Request is a feature of GitHub (and other remote hosts) that tells your t
 
 ## Other Git Tools
 
-As you become more comfortable with Git, these advanced commands will become lifesavers in your daily workflow:
+As you become more comfortable with Git, these advanced commands might help you in certain situations:
 
 - **`git stash`**
     If you are in the middle of working on a file but need to switch branches quickly to fix a bug, you can't switch if you have uncommitted changes. Run `git stash` to temporarily shelf your uncommitted changes. Once you are done fixing the bug, come back to your branch and run `git stash pop` to bring your half-finished work back.
