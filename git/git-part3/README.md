@@ -117,7 +117,7 @@ Merging takes the contents of a source branch and integrates them into a target 
 
 - **How to do it:** First, switch to the target branch (`git switch main`), then run `git merge <feature-branch>`.
 - **What it does:** It creates a new "merge commit" that ties the histories of both branches together.
-- **Pros:** It is safe and preserves the exact chronological history of your project.
+- It is safe and preserves the exact chronological history of your project.
 
 **2. Git Rebase**
 Rebasing is an alternative to merging that creates a cleaner, perfectly linear project history.
@@ -136,7 +136,7 @@ Rebasing is an alternative to merging that creates a cleaner, perfectly linear p
 
 - **How to do it:** While on your feature branch, run `git rebase main`.
 - **What it does:** It temporarily sets aside your feature branch commits, updates your branch with the latest changes from `main`, and then re-applies your feature commits on top of it.
-- **Pros:** It eliminates unnecessary merge commits, making the project history much easier to read.
+- It eliminates unnecessary merge commits, making the project history much easier to read.
 - > **DANGER:** **Never rebase a shared branch.** Because rebasing rewrites commit history, doing it on a branch that other developers are actively using will cause massive merge conflicts for your team. Only rebase your local, private branches.
 
 ---
