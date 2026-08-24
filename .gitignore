@@ -1,3 +1,4 @@
 *.code-workspace
 *.venv/
 *.webdevenv/
+*git/git-part3
