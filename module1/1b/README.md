@@ -437,10 +437,3 @@ Things to note:
 * We convert `num_input` and `process_select` into integers mainly because they became strings when the function executed
 * All children of divs should be strings. Hence, note that we processed the function values further so they could become strings.
 * The `return` is always enclosed in square brackets.
-
-## 8. Additional work to be done -- Challenge Yourselves
-
-1. Currently, the program assumes that all inputs are valid. In case the inputs are invalid, let the application tell the user of their error via the output area.
-2. Format the output strings.
-   1. The factorial displays "The factorial is ___."
-   2. The generator displays "We get the sequence _____."
