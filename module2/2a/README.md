@@ -272,17 +272,4 @@ To avoid this, we use a special placeholder `%s` to indicate values which are in
 
 ## 6. Using your API to modify your records
 
-For this part, download `testdb.py` from the git and execute the codes. It should work if `dbconnect.py` was setup correctly. Study the scripts to prepare for the next activity
-
-## 7. Homework: Modifying the database
-
-Create a file `hw3.py` and setup the following functions.
-
-1. Re-add the three genres in the testdb.py
-2. Add 2 movies each for each genre.
-3. Document your work in ppt slides -- save as pdf then submit in UVLe.
-4. Retain your databases this time, you will use these for the next module.
-5. Create a backup of your file. Check out [this reference for backing up your databases](https://www.pgadmin.org/docs/pgadmin4/development/backup_dialog.html)
-   1. On the sidebar, right-click on your database then select `Backup...`
-   2. Select the location for your backup file and provide a filename.
-   3. This is all you need to do. Find the `Backup` button at the footer of the dialog box then wait for the backup to be completed.
+For this part, download `testdb.py` from the git and execute the codes. It should work if `dbconnect.py` was setup correctly. Study the scripts to prepare for the next activity.
