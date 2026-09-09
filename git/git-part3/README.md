@@ -11,14 +11,13 @@ This is a guide to using Git, a version control tool used for collaborative prog
   - [Branches](#branches)
   - [git merge and rebase](#git-merge-and-rebase)
   - [GitHub Pull Requests](#github-pull-requests)
-- Other Git Tools(#other)
-- [SUCCESS]
+- [Other Git Tools](#other-git-tools)
 
 ## Preliminaries
 
 1. Create your account on GitHub.com.
 2. Your Git should by accessible to you. Consult your groupmate who setup the Git repository via GitHub.
-3. Install git on your PC/Mac. Find the appropriate installer [righthere](https://git-scm.com/downloads).
+3. Install Git on your PC/Mac. Find the appropriate installer [righthere](https://git-scm.com/downloads).
 4. Ensure that your repository is connected to VSCode.
 
 ---
@@ -152,6 +151,9 @@ In a collaborative environment, you rarely merge your own code directly into `ma
 3. Click the Add branch protection rule button.
 4. Type your target branch name (e.g., main) into the Branch name pattern field.
 5. Check the boxes for your desired protections (e.g., Require a pull request before merging and Require approvals).
+
+![alt text](image-4.png)
+
 6. Click Create at the bottom of the page to save.
 
 A Pull Request is a feature of GitHub (and other remote hosts) that tells your team about changes you've pushed to a branch. It allows your peers to review your code, discuss modifications, and approve it before it officially becomes part of the main codebase.
