@@ -22,16 +22,12 @@ GitHub repo containing materials for studying web development under IE 172: Info
 ## Module 4
 
 - a. Reports
-- b. Login Page
+- [b. Login Page](login/README.md)
 
 ## Git Basics
 
 - [Guide to Git: Part 1](git/git-part1/README.md)
 - [Guide to Git: Part 2](git/git-part2/README.md)
 - [Guide to Git: Part 3](git/git-part3/README.md)
-
-## Additional Functions
-
-- [Login Page](login/README.md)
 
 _Content from ie172webdev_notes by **casonday**_
