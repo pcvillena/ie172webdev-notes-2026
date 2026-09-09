@@ -164,16 +164,20 @@ In a collaborative environment, you rarely merge your own code directly into `ma
 
 A Pull Request is a feature of GitHub (and other remote hosts) that tells your team about changes you've pushed to a branch. It allows your peers to review your code, discuss modifications, and approve it before it officially becomes part of the main codebase.
 
+> Note: Technically, if you have push access, you can bypass PRs entirely and push commits directly on the main branch. This is merely a safety feature that ensures main is always stable.
+
 **The Pull Request Workflow:**
 
-1. **Push your branch to GitHub:**
-    `git push -u origin <branch-name>`
-2. **Open GitHub:** Navigate to your repository in the browser. You will usually see a green **"Compare & pull request"** button appear automatically.
-3. **Create the PR:** Click the button, give your PR a descriptive title, and outline what changes you made in the description box.
-4. **Review and Approve:** Tag your teammates as reviewers. They can leave comments or request changes directly on specific lines of code.
-5. **Merge:** Once approved, click the **"Merge pull request"** button on GitHub. Your code is now successfully integrated into `main`!
+  1. **Push your branch to GitHub:**
+      `git push -u origin <branch-name>`
+  2. **Open GitHub:** Navigate to your repository in the browser. You will usually see a green **"Compare & pull request"** button appear automatically.
 
-> Note: Technically, if you have push access, you can bypass PRs entirely and push commits directly on the main branch. This is merely a safety feature that ensures main is always stable.
+  ![alt text](image-5.png)
+
+  3. **Create the PR:** Click the button, give your PR a descriptive title, and outline what changes you made in the description box.
+  4. **Review and Approve:** Tag your teammates as reviewers. They can leave comments or request changes directly on specific lines of code.
+  5. **Merge:** Once approved, click the **"Merge pull request"** button on GitHub. Your code is now successfully integrated into `main`!
+
 ---
 
 ## Other Git Tools
