@@ -11,14 +11,13 @@ This is a guide to using Git, a version control tool used for collaborative prog
   - [Branches](#branches)
   - [git merge and rebase](#git-merge-and-rebase)
   - [GitHub Pull Requests](#github-pull-requests)
-- Other Git Tools(#other)
-- [SUCCESS]
+- [Other Git Tools](#other-git-tools)
 
 ## Preliminaries
 
 1. Create your account on GitHub.com.
 2. Your Git should by accessible to you. Consult your groupmate who setup the Git repository via GitHub.
-3. Install git on your PC/Mac. Find the appropriate installer [righthere](https://git-scm.com/downloads).
+3. Install Git on your PC/Mac. Find the appropriate installer [righthere](https://git-scm.com/downloads).
 4. Ensure that your repository is connected to VSCode.
 
 ---
@@ -139,6 +138,12 @@ Rebasing is an alternative to merging that creates a cleaner, perfectly linear p
 - It eliminates unnecessary merge commits, making the project history much easier to read.
 - > **DANGER:** **Never rebase a shared branch.** Because rebasing rewrites commit history, doing it on a branch that other developers are actively using will cause massive merge conflicts for your team. Only rebase your local, private branches.
 
+**3. Creating the branch in the remote repository**
+After creating your branch at the local repository, there needs to be a branch setup in your remote repository if it is your first time pushing from the new branch.
+
+- Simply run `git push -u origin <branch-name>` to create the branch in remote and push your changes.
+- You can run `git push` normally after you have an existing branch in the remote.
+
 ---
 
 ### GitHub Pull Requests
@@ -147,25 +152,32 @@ In a collaborative environment, you rarely merge your own code directly into `ma
 
 #### **Setting Up Branch Protection**
 
-1. Navigate to your repository on GitHub and click the Settings tab.
-2. In the left sidebar under "Code and automation," click Branches.
-3. Click the Add branch protection rule button.
-4. Type your target branch name (e.g., main) into the Branch name pattern field.
-5. Check the boxes for your desired protections (e.g., Require a pull request before merging and Require approvals).
-6. Click Create at the bottom of the page to save.
+  1. Navigate to your repository on GitHub and click the Settings tab.
+  2. In the left sidebar under "Code and automation," click Branches.
+  3. Click the Add branch protection rule button.
+  4. Type your target branch name (e.g., main) into the Branch name pattern field.
+  5. Check the boxes for your desired protections (e.g., Require a pull request before merging and Require approvals).
+
+  ![alt text](image-4.png)
+
+  6. Click Create at the bottom of the page to save.
 
 A Pull Request is a feature of GitHub (and other remote hosts) that tells your team about changes you've pushed to a branch. It allows your peers to review your code, discuss modifications, and approve it before it officially becomes part of the main codebase.
 
+> Note: Technically, if you have push access, you can bypass PRs entirely and push commits directly on the main branch. This is merely a safety feature that ensures main is always stable.
+
 **The Pull Request Workflow:**
 
-1. **Push your branch to GitHub:**
-    `git push -u origin <branch-name>`
-2. **Open GitHub:** Navigate to your repository in the browser. You will usually see a green **"Compare & pull request"** button appear automatically.
-3. **Create the PR:** Click the button, give your PR a descriptive title, and outline what changes you made in the description box.
-4. **Review and Approve:** Tag your teammates as reviewers. They can leave comments or request changes directly on specific lines of code.
-5. **Merge:** Once approved, click the **"Merge pull request"** button on GitHub. Your code is now successfully integrated into `main`!
+  1. **Push your branch to GitHub:**
+      `git push -u origin <branch-name>`
+  2. **Open GitHub:** Navigate to your repository in the browser. You will usually see a green **"Compare & pull request"** button appear automatically.
 
-> Note: Technically, if you have push access, you can bypass PRs entirely and push commits directly on the main branch. This is merely a safety feature that ensures main is always stable.
+  ![alt text](image-5.png)
+
+  3. **Create the PR:** Click the button, give your PR a descriptive title, and outline what changes you made in the description box.
+  4. **Review and Approve:** Tag your teammates as reviewers. They can leave comments or request changes directly on specific lines of code.
+  5. **Merge:** Once approved, click the **"Merge pull request"** button on GitHub. Your code is now successfully integrated into `main`!
+
 ---
 
 ## Other Git Tools
