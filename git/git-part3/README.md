@@ -4,7 +4,6 @@ This is a guide to using Git, a version control tool used for collaborative prog
 
 ---
 
-- [Guide to Git: Part 3]
 - [Preliminaries](#preliminaries)
 - [Undoing a commit](#undoing-a-commit)
 - [Developing new features using branches](#developing-new-features-using-branches)
