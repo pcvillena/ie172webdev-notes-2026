@@ -138,6 +138,12 @@ Rebasing is an alternative to merging that creates a cleaner, perfectly linear p
 - It eliminates unnecessary merge commits, making the project history much easier to read.
 - > **DANGER:** **Never rebase a shared branch.** Because rebasing rewrites commit history, doing it on a branch that other developers are actively using will cause massive merge conflicts for your team. Only rebase your local, private branches.
 
+**3. Creating the branch in the remote repository**
+After creating your branch at the local repository, there needs to be a branch setup in your remote repository if it is your first time pushing from the new branch.
+
+- Simply run `git push -u origin <branch-name>` to create the branch in remote and push your changes.
+- You can run `git push` normally after you have an existing branch in the remote.
+
 ---
 
 ### GitHub Pull Requests
@@ -146,15 +152,15 @@ In a collaborative environment, you rarely merge your own code directly into `ma
 
 #### **Setting Up Branch Protection**
 
-1. Navigate to your repository on GitHub and click the Settings tab.
-2. In the left sidebar under "Code and automation," click Branches.
-3. Click the Add branch protection rule button.
-4. Type your target branch name (e.g., main) into the Branch name pattern field.
-5. Check the boxes for your desired protections (e.g., Require a pull request before merging and Require approvals).
+  1. Navigate to your repository on GitHub and click the Settings tab.
+  2. In the left sidebar under "Code and automation," click Branches.
+  3. Click the Add branch protection rule button.
+  4. Type your target branch name (e.g., main) into the Branch name pattern field.
+  5. Check the boxes for your desired protections (e.g., Require a pull request before merging and Require approvals).
 
-![alt text](image-4.png)
+  ![alt text](image-4.png)
 
-6. Click Create at the bottom of the page to save.
+  6. Click Create at the bottom of the page to save.
 
 A Pull Request is a feature of GitHub (and other remote hosts) that tells your team about changes you've pushed to a branch. It allows your peers to review your code, discuss modifications, and approve it before it officially becomes part of the main codebase.
 
