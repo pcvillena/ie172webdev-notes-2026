@@ -17,7 +17,6 @@
     * 6.1. [Adding more elements](#61-adding-more-elements)
 
 7. [Make the Components Interactive](#7-make-the-components-interactive)
-8. [Additional work to be done -- Challenge Yourselves!](#8-additional-work-to-be-done----challenge-yourselves)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
