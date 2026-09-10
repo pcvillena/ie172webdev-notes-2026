@@ -181,6 +181,6 @@ def moviehome_loadmovielist(pathname, filter_country):
         if df.shape[0]:
             return [table, figure3]
         else:
-            return ['No records to display', 'No figure to display']
+            return [table, go.Figure()]
     else:
         raise PreventUpdate
