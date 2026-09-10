@@ -36,9 +36,9 @@ What you will do will depend on whether you have pushed the erroneous code or no
 
 ### If you have already pushed the mistake code in the remote repo
 
-- Use `git revert <commit-hash>` to create a commit that is the exact opposite of a specific commit.
-  - A commit hash is a unique identifier composed of numbers and lowercase letters that can be found in either GitHub or VSCode.
-  - You also have the option to simply create a normal `git commit -m <summary>` to undo any errors in the code.
+- Use `git revert <commit-hash>` to create a brand new commit that is the exact opposite of a specific commit.
+  - A commit hash is a unique identifier composed of numbers and lowercase letters, use `git log` in your terminal or find it in GitHub or VSCode UI.
+  - You also have the option to simply create a normal `git commit -m 'fixed mistake` to undo any errors in the code.
   
   **In GitHub:**
   Click the list of commits (the one that says <#> commits)

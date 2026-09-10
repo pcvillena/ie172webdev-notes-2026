@@ -43,7 +43,7 @@ To organize our thoughts, we have some mockups that would serve as guides for ou
 
 For code organization purposes, we create a folder inside `apps` for each set of pages that belong to a module. We will now setup the **movies module**. Do the following:
 
-1. From GitHub, download the contents of the folder `apps\movies\`
+1. From GitHub, download the contents of the folder `apps/movies/`
 2. Create a `movies` folder inside `apps`. Paste the downloaded scripts inside `movies`.
 3. Incorporate these new scripts into `index.py`
    1. Import the two new files in `index.py`
